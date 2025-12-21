@@ -86,7 +86,6 @@ export default function Page() {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="text-3xl text-red-600">n4p.</div>
-            <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Media Monitoring</span>
           </div>
           <Button 
             variant="default"
@@ -103,6 +102,9 @@ export default function Page() {
           <div className="max-w-4xl mx-auto space-y-6">  
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
             Media Monitoring
+            <span className="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 text-sm font-semibold">
+              Platform Monitoring Terpadu
+            </span>
           </h1>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
