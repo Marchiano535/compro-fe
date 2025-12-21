@@ -80,10 +80,10 @@ export default function Page() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen w-full bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Navbar */}
-      <nav className="border-b bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <nav className="w-full border-b bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="text-3xl text-red-600">n4p.</div>
             <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Media Monitoring</span>
@@ -98,19 +98,11 @@ export default function Page() {
       </nav>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
-        <div className="max-w-4xl mx-auto space-y-6">
-          <div className="inline-block">
-            <span className="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 text-sm font-semibold">
-              Platform Monitoring Terpadu
-            </span>
-          </div>
-          
+      <section className="w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+          <div className="max-w-4xl mx-auto space-y-6">  
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
             Media Monitoring
-            <span className="block text-blue-600 dark:text-blue-400 mt-2">
-              & Issue Tracking System
-            </span>
           </h1>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -139,10 +131,12 @@ export default function Page() {
             </Button>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Stats Section */}
-      <section className="container mx-auto px-4 py-12">
+      <section className="w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {[
             { icon: TrendingUp, label: "Real-time Analytics", value: "24/7" },
@@ -159,10 +153,12 @@ export default function Page() {
             </Card>
           ))}
         </div>
+        </div>
       </section>
 
       {/* Features Section */}
-      <section id="features" className="container mx-auto px-4 py-20">
+      <section id="features" className="w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Fitur Unggulan</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -204,10 +200,13 @@ export default function Page() {
             </Card>
           ))}
         </div>
+        </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="container mx-auto px-4 py-20 bg-gray-50 dark:bg-gray-800/50 rounded-3xl my-12">
+      <section className="w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="bg-gray-50 dark:bg-gray-800/50 rounded-3xl px-6 sm:px-8 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Mengapa Memilih Platform Kami?</h2>
           
@@ -220,10 +219,13 @@ export default function Page() {
             ))}
           </div>
         </div>
+        </div>
+        </div>
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
+      <section className="w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-4xl font-bold">
             Siap Untuk Memulai?
@@ -240,11 +242,12 @@ export default function Page() {
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
+        </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t mt-20">
-        <div className="container mx-auto px-4 py-8">
+      <footer className="w-full border-t mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center space-x-2">
               <div className="text-2xl text-red-600">n4p.</div>
